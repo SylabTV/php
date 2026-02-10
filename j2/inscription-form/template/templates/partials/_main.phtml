@@ -1,0 +1,13 @@
+<main>
+    <h2>
+        <?= $pageTitle; ?>
+    </h2>
+    <!-- Votre formulaire ici -->
+     <form method="post" action="controllers\user-form.php" >
+        <input type="email" name="email" id="email" placeholder="votre email" required>
+        <input type="password" name="password" id="password" placeholder="votre mot de passe" required>
+        <input type="password" name="password_conf" id="password_conf" placeholder="confirmé votre mot de passe" required>
+        <input type="checkbox" name="checkbox" id="checkbox" value="yes">
+        <button type="submit">validé</button>
+     </form>
+</main>
