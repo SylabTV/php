@@ -1,0 +1,24 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($users as $user): ?>
+            <tr>
+                <td><?= htmlspecialchars($user->getUsername()); ?></td>
+                <td><?= htmlspecialchars($user->getEmail()); ?></td>
+                <td><?= htmlspecialchars($user->getRole()); ?></td>
+                <td>
+                    <a href="logic/delete-user.php?id=<?= $user->getId(); ?>">
+                        Supprimer
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

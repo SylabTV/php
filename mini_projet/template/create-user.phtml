@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créer un utilisateur</title>
+</head>
+<body>
+
+<h1>Créer un nouvel utilisateur</h1>
+
+<form action="../logic/create-user.php" method="post">
+    <label>Username :</label>
+    <input type="text" name="username" placeholder="Username" required>
+    <br><br>
+
+    <label>Email :</label>
+    <input type="email" name="email" placeholder="Email" required>
+    <br><br>
+
+    <label>Password :</label>
+    <input type="password" name="password" placeholder="Password" required>
+    <br><br>
+
+    <label>Role :</label>
+    <select name="role">
+        <option value="USER" selected>User</option>
+        <option value="ADMIN">Admin</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Créer</button>
+</form>
+
+</body>
+</html>
